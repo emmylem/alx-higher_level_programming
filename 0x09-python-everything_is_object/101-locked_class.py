@@ -5,4 +5,4 @@
 class LockedClass:
     """Prevent the user from instantiating new LockedClass attributes
     except first_name."""
-    lock = ["first_name"]
+    __lock__ = ["first_name"]
